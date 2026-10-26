@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24",
+  "status": "exploratory follow-up; frozen before inspecting learning-curve results",
+  "question": "How does a simulation-score predictor improve as more evaluated training-policy groups become available?",
+  "cohorts": ["clean", "randomized"],
+  "source": "same pinned 25 cotrain RoboTwin configurations, 50 known tasks, and 17 ancestry-proxy groups as robotwin_plan.json",
+  "outer_folds": "unchanged original 3 family-grouped folds x 3 seeded partitions",
+  "anchors": "fixed 10 same-condition tasks; original five anchor draws; same targets at every training size",
+  "training_fractions": [0.2, 0.4, 0.6, 0.8, 1.0],
+  "subsampling": "five score-independent random group orders per outer fold; select ceil(fraction * available_groups), at least two; nested subsets; keep all policies of selected groups",
+  "subset_seed": "20261024 + 2000 + 100 * partition + 10 * fold + subset_draw",
+  "inner_tuning": "original latent rank/ridge search rerun inside each selected training subset; no outer test target enters selection",
+  "predictors": "all seven original methods unchanged; chart Latent, Additive, Scale and AnchorMean",
+  "endpoints": "family-macro MAE and task-macro ranking error at observed gap >= 0.10; predicted ties cost 0.5; both policies jointly held out",
+  "aggregation": "average training subset draws and repeated designs within policy then family for MAE; pool disjoint folds then average designs within task for ranking",
+  "uncertainty": "2000 paired bootstrap draws over group proxies for MAE or tasks for ranking; descriptive only, no independent-trial interpretation",
+  "x_axis": "mean training policy-task score cells per fit, excluding held-out policy anchors; exact policy/group/cell ranges retained",
+  "limits": "training data means published evaluation scores used by the meta-predictor, not robot-policy demonstrations; no new tasks, physical validation, power-law fit, or extrapolation beyond observed budgets"
+}

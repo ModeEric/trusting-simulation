@@ -1,0 +1,23 @@
+{
+  "status": "frozen before fitting predictors or inspecting their errors",
+  "seed": 20261025,
+  "source_revision": "554a0d06924f64f15551119e393373a9bc008771",
+  "population": "Within-pi0.5 checkpoint/intervention generalization, not independent architectures",
+  "cohort": "Unmodified-prompt pi0.5 protocol; first pass per weights hash; repeat passes reserved for noise diagnostics",
+  "grouping": "Nine manually frozen intervention blocks; these are NOT independent ancestry families. All checkpoints share pi0.5 and some cross-block parents.",
+  "outer_validation": "3 repeated 3-fold intervention-group partitions, 3 nested base-task anchor orders",
+  "anchor_budgets_base_tasks": [1, 2, 4, 8, 16, 24],
+  "training_group_fractions": [0.25, 0.5, 0.75, 1.0],
+  "checkpoint_scaling_anchor_budget": 8,
+  "fixed_test_tasks": "16 base tasks per anchor draw, common to every anchor budget; remaining 24 form nested anchor pools",
+  "training_policy_target_results": "Allowed: model predicts missing cells of held-out checkpoints on tasks observed for training checkpoints",
+  "test_policy_target_results": "Never supplied to fitting, tuning, or anchors",
+  "methods": ["TaskMean", "AnchorMean", "Additive", "AxisOffset", "Neighbor3", "Latent"],
+  "latent_grid": {"rank": [1, 2, 4, 8], "ridge": [10.0, 1.0, 0.1]},
+  "tuning": "Inner intervention-group CV using Brier score, exact same anchor/target split; conservative grid tie order",
+  "metrics": "Brier primary; base-task by perturbation-axis mean-score MAE and pairwise agreement secondary. Ranking compares jointly held-out checkpoints, real observed gap >=0.10; prediction ties count half.",
+  "aggregation": "Average cases within base task and checkpoints within intervention group, then equal task/group weights. Rankings macro-average eligible pairs within base-task-by-axis cell, then tasks.",
+  "intervals": "Paired base-task cluster bootstrap after averaging repeated splits; descriptive, conditional on observed checkpoints; no independence claim for related checkpoints.",
+  "sensitivity": "Two-way camera-intervention versus noncamera holdout, and run-A repeat-pass noise diagnostic",
+  "constraints": "No robot-policy inference/training, simulation rollouts, physical trials, paid calls, or synthetic episodes"
+}

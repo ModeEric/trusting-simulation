@@ -1,0 +1,6 @@
+{
+  "robotwin_plan.json": "829007d88d8520ebd9d3c4ef6014d6d3b365bec75c855b78f65350775255c91b",
+  "src/robotwin_prediction.py": "d1599f2f18065a3c5cc608edba4c973b9c9408b084f581a31d346f4c4631865f",
+  "src/sim_prediction.py": "467a221ee675a422bf453ce36ced831075dca0e7315b99bc671746a7b09f2147",
+  "data/raw/robotwin_leaderboard.json": "6214f507bdafbe56b73c76a9d91439b9ec025fe5ff53757bd981307b1ab3c805"
+}

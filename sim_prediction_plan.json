@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-24",
+  "status": "exploratory simulation-only follow-up; frozen before predictor results",
+  "target": "published binary-success-rate aggregate on unobserved base tasks for a held-out policy family",
+  "primary_cohort": "non-agent, non-single-task entries with documented simulation training configurations in pinned website export",
+  "secondary_cohort": "all non-agent, non-single-task entries; incomplete training/protocol provenance",
+  "tasks": "42 base tasks; randomized variants omitted entirely",
+  "metric": "success_rate only; no progress or physical labels used",
+  "families": "connected components of manually recorded named lineages and identical published initialization checkpoints; unknown relations remain a limitation",
+  "outer_validation": "3 grouped folds, 3 seeded partitions; both ranked policies must be held out in the same fold and belong to different family groups",
+  "anchors": "5 and 10 existing task means; 5 seeded uniform task orders shared by all policies, with nested 5/10 sets; no test-dependent selection",
+  "methods": ["Zero", "TaskMean", "AnchorMean", "Additive", "Scale", "Neighbor3", "Latent"],
+  "scale": "least-squares nonnegative scalar fit to training task means using anchors; 0.01 ridge toward scale=1",
+  "latent": "training-row task-centered SVD; anchor least squares; rank in [1,2,4], ridge in [0.01,0.1,1.0]; inner 3-fold family CV selects family-macro nonanchor MAE; ties favor smaller rank then larger ridge",
+  "primary_endpoint": "family-macro MAE, after averaging tasks and repeated anchor/fold designs per policy then policies within family",
+  "ranking_endpoint": "task-macro cross-family pair error for observed target success gaps >=0.10; predicted ties have 0.5 loss",
+  "diagnostics": "nonzero-target MAE, zero-target MAE, anchor-set variation, task-wise pair coverage, descriptive cluster bootstrap intervals",
+  "bootstrap": "2000 draws of family clusters for MAE; task clusters for ranking; shared training and repeated measurements mean intervals remain descriptive",
+  "limits": "known benchmark tasks, unseen predictor family groups with anchor observations; not unseen-task or real-world validation; denominators unavailable; no synthetic episodes",
+  "seed": 20261024
+}

@@ -1,0 +1,18 @@
+{
+  "status": "exploratory follow-up; frozen before computing blend outcomes",
+  "date": "2026-10-24",
+  "attribute": "precision_contact",
+  "global_ability": "mean simulation score over all available tasks within embodiment; no physical labels",
+  "predictor": "(1-w_z)*matched_sim + w_z*global_sim",
+  "global_candidates": "w=0,0.1,...,1",
+  "task_candidates": "w_0,w_1 independently in 0,0.1,...,1",
+  "outer_split": "leave-one-task-out within embodiment",
+  "inner_selection": "mean validation-task loss on remaining physical tasks; candidate weights are fixed, so candidates have no inner-fit parameters",
+  "primary_objective": "task-macro ranking error on observed real gaps >=0.10; predicted ties cost 0.5",
+  "secondary_objective": "task-macro MAE; report separately, do not select winner using outer results",
+  "tie_break": "within 1e-12 of best loss: smallest abs(w1-w0), then smallest mean weight, then w0",
+  "controls": ["matched simulation", "global ability", "global blend", "100 within-embodiment attribute permutations"],
+  "sensitivity": "exclude target simulated task from global ability, including each inner validation target",
+  "intervals": "2000 paired task bootstrap replicates; descriptive and unstable with 4-5 tasks",
+  "no_new_data": true
+}

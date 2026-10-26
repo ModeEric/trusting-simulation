@@ -1,0 +1,7 @@
+{
+  "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+  "src/ingest_libero_plus.py": "d9de9267f9ce009cf39e03ff63769125ad90eff3d5411455fd56b5a72d8f6094",
+  "src/libero_plus_experiment.py": "bd935e3b7a0b0896a990262fd476cdc2eefbe6af95647ccd63edd4aa6da249d6",
+  "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+  "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+}

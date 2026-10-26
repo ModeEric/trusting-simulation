@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "note": "Required computational inputs only. The original download_audit.json retains the broader acquisition history.",
+  "files": [
+    {
+      "path": "data/raw/simpler_metrics.py",
+      "url": "https://raw.githubusercontent.com/simpler-env/SimplerEnv/eddb5690749a1e34267807c0f7b5eede323918d7/simpler_env/utils/metrics.py",
+      "sha256": "ee8596be6997d41295bf5b25f90c9b5b3ba47ef2bd92296b8c45e7ffc5606dc6",
+      "bytes": 6778,
+      "bundled": true,
+      "source_revision": "eddb5690749a1e34267807c0f7b5eede323918d7"
+    },
+    {
+      "path": "data/raw/simpler_calc_metrics.py",
+      "url": "https://raw.githubusercontent.com/simpler-env/SimplerEnv/eddb5690749a1e34267807c0f7b5eede323918d7/tools/calc_metrics.py",
+      "sha256": "c95963ec1452cb4f5f34db012eda79542c8afdd0465299ae30cf710c4b4a0521",
+      "bytes": 1112,
+      "bundled": true,
+      "source_revision": "eddb5690749a1e34267807c0f7b5eede323918d7"
+    },
+    {
+      "path": "data/raw/simpler_LICENSE",
+      "url": "https://raw.githubusercontent.com/simpler-env/SimplerEnv/eddb5690749a1e34267807c0f7b5eede323918d7/LICENSE",
+      "sha256": "c28645822e5cdadf816144773ee153332449ae04aa6f0b6a6393e5611092f878",
+      "bytes": 1068,
+      "bundled": true,
+      "source_revision": "eddb5690749a1e34267807c0f7b5eede323918d7"
+    },
+    {
+      "path": "data/raw/robodojo_app.js",
+      "url": "https://robodojo-benchmark.com/assets/index-DA5jHulR.js",
+      "sha256": "d23d47f0bc1d2c535a107e4d33d5a4524bb7a7eae1d97a0ecaa30260de20fcb9",
+      "bytes": 369518,
+      "bundled": false,
+      "source_revision": null
+    },
+    {
+      "path": "data/raw/robodojo_rollout_manifest.json",
+      "url": "https://robodojo-benchmark.com/data/rolloutManifest.generated.json",
+      "sha256": "5d87267b4760fb4acf2807d8f2ad1e8a87cf054a65e28fcfaab24a210a2919d3",
+      "bytes": 6388019,
+      "bundled": false,
+      "source_revision": null
+    },
+    {
+      "path": "data/raw/robocurve_report.html",
+      "url": "https://robocurve.org/opus-5-5-robodojo-rc-tier-1/",
+      "sha256": "74fded9cdd1e57d883a626b1ce22db6e13ffaca1f25e51d066df56a5bdbe398b",
+      "bytes": 512727,
+      "bundled": false,
+      "source_revision": null
+    },
+    {
+      "path": "data/raw/robocurve_trials.csv",
+      "url": "https://robocurve.org/opus-5-5-robodojo-rc-tier-1/data/trials.csv",
+      "sha256": "4b97626fd5e9d0078849991ab6577403126135474ab918b5c2265c7d6dd2fe8a",
+      "bytes": 70611,
+      "bundled": false,
+      "source_revision": null
+    },
+    {
+      "path": "data/raw/robocurve_cells.csv",
+      "url": "https://robocurve.org/opus-5-5-robodojo-rc-tier-1/data/cells.csv",
+      "sha256": "0163189da883d07799d29461b69426ff31c1abd2201470e79ba657cb9b19d932",
+      "bytes": 4109,
+      "bundled": false,
+      "source_revision": null
+    },
+    {
+      "path": "data/raw/continuation/robodojo_paper_v1.html",
+      "url": "https://arxiv.org/html/2607.04434v1",
+      "sha256": "b087754e30b3cc5cb6dfdd6d7b6af8c2227a32efed61a8e9aed5a016c641b3e1",
+      "bytes": 955376,
+      "bundled": false,
+      "source_revision": "arxiv:2607.04434v1"
+    },
+    {
+      "path": "data/raw/continuation/robodojo_paper_v3.html",
+      "url": "https://arxiv.org/html/2607.04434v3",
+      "sha256": "02bc15655463d6c69c24b378b4c8f09ba14a24b6aaa0480d247f26efe3a9f82d",
+      "bytes": 966429,
+      "bundled": false,
+      "source_revision": "arxiv:2607.04434v3"
+    },
+    {
+      "path": "data/raw/robotwin_leaderboard.json",
+      "url": "https://raw.githubusercontent.com/RoboTwin-Platform/RoboTwin-Platform.github.io/0abb5a03455073fa74047a1c4015b0f88cedc254/data/robotwin_leaderboard.json",
+      "sha256": "6214f507bdafbe56b73c76a9d91439b9ec025fe5ff53757bd981307b1ab3c805",
+      "bytes": 55514,
+      "bundled": false,
+      "source_revision": "0abb5a03455073fa74047a1c4015b0f88cedc254"
+    },
+    {
+      "path": "data/raw/libero_plus/CLAIMS.md",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/CLAIMS.md",
+      "sha256": "3fe7a9ddfdd95e550fc70a733ea6a67b70c2600663e62337f9786b7cb6625fe2",
+      "bytes": 36973,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/LICENSE",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/NOTICE",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/NOTICE",
+      "sha256": "3756acbe3a14ca166351bd883bc2fb8c3ed0b6fd722be2f88405a928a6513e83",
+      "bytes": 2609,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/README.md",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/README.md",
+      "sha256": "29fd9ec3bcb5d528b4997b960dd7ea3cc78bb889c9adccc798669e23317eeffa",
+      "bytes": 8087,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/MANIFEST.json",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/MANIFEST.json",
+      "sha256": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c",
+      "bytes": 30787,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/README.md",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/README.md",
+      "sha256": "e2a4954a9772a3634eb203b6703f0da5fe1a979be2f751a09d2557b0401d88ee",
+      "bytes": 2009,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/adapter-then-fullft.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/adapter-then-fullft.jsonl.gz",
+      "sha256": "f597320681acc5f8585182bfeb6b08ca2f3dac8dac79c2d6ed9c1a107a203260",
+      "bytes": 66984,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/all-views.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/all-views.jsonl.gz",
+      "sha256": "18b0ba7aae50dcf103565ad24194827cad6699a3133add21ffd8c03d8fc85e94",
+      "bytes": 67257,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/cross-view-adapter.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/cross-view-adapter.jsonl.gz",
+      "sha256": "327886d8e9ad9cd0255a190ec8c0b99b39b192c3d65260f49e745144b7c6a9e5",
+      "bytes": 65414,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/cross-view-all-weights.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/cross-view-all-weights.jsonl.gz",
+      "sha256": "269d63ab16967cff5c96bd034f39e8cdcc813172a50bc5c388fdc6f0945b5af8",
+      "bytes": 67418,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/flux3-mix.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/flux3-mix.jsonl.gz",
+      "sha256": "b85930c7d506c40dd2d5844759e71ee74b8d1aa3c8c4bddfe40c4150a101a15f",
+      "bytes": 65482,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/flux3-plus-only.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/flux3-plus-only.jsonl.gz",
+      "sha256": "9c6afd57ef063aa95f8a6e7d8c6015a89d06a34d075ff1ae00a20160975979e6",
+      "bytes": 65617,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/fullft-then-adapter.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/fullft-then-adapter.jsonl.gz",
+      "sha256": "9da7826b9868904089b53b6d7d1a479179464c46bf2f86e937cb3d1de51ca43e",
+      "bytes": 67310,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/layout-rollouts.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/layout-rollouts.jsonl.gz",
+      "sha256": "b72c2c1d56980b3615ffe9253c9d14eee1947eab11ba099c447d0295294a83f7",
+      "bytes": 66841,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/layouts-moved-cameras.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/layouts-moved-cameras.jsonl.gz",
+      "sha256": "3d15551ad86db9bb96b3cb993c00239673e2403dedfdf581ad34a315ea445b23",
+      "bytes": 67138,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/main-model-noviews.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/main-model-noviews.jsonl.gz",
+      "sha256": "79b30bcfa17fbfb0cb272b4336f9c5c957b4e732b6ce6f874b3aa75ccd4d9b6b",
+      "bytes": 67021,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/main-model-seed2.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/main-model-seed2.jsonl.gz",
+      "sha256": "bdaf08e1f252fef20fcb2a08b49bf88327f7820ba04d7bdd7cfe17d123d8678e",
+      "bytes": 67067,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/main-model-seed3.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/main-model-seed3.jsonl.gz",
+      "sha256": "22f45b313bf5276601724ed5b3f180cf4ae07b3871043554ea031c07c43bf510",
+      "bytes": 67325,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/main-model.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/main-model.jsonl.gz",
+      "sha256": "7ebde229ae688bbe34bc261acfb633d5037caffc4c7f1187d8e14f4f9b76397a",
+      "bytes": 66933,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/mxri-2-gpt.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/mxri-2-gpt.jsonl.gz",
+      "sha256": "7871c9faefd23d6b0d180fe36e9bb712a4a412ff93c2043fb74eca09b5b38f83",
+      "bytes": 67150,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/mxri-va-gpt-pass0.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/mxri-va-gpt-pass0.jsonl.gz",
+      "sha256": "6483a4b0ae6b73870ad63419f067cbe46036b61b062a3866f825af2ccd33a227",
+      "bytes": 67297,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/mxri-va-gpt-pass1.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/mxri-va-gpt-pass1.jsonl.gz",
+      "sha256": "14ff618e11f8a8290cc1650a76598982bddaf42ccbd52ce309e1300e2525ce34",
+      "bytes": 67270,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/mxri-va-qwen.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/mxri-va-qwen.jsonl.gz",
+      "sha256": "9d5af3296ccbd6d96a38951d369d6a5711880d180017b433e9ec30898903538e",
+      "bytes": 67221,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/noclips-nolang.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/noclips-nolang.jsonl.gz",
+      "sha256": "b7c6d4fa1b26ab9a49046e0aa5c9924913c5643307c18c9db514214ba01c526c",
+      "bytes": 66640,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/noclips.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/noclips.jsonl.gz",
+      "sha256": "5bfa7a07cfd9dfcefd3ec3552175c1d97a7e416564d84b3856042eaa4e85ddb2",
+      "bytes": 66556,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/openvla-oft-plus-mix.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/openvla-oft-plus-mix.jsonl.gz",
+      "sha256": "61bf794703351510e73505fdd8c8a1ec767c36f022a5f77cdf77e63c7d9a8570",
+      "bytes": 60321,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/openvla-oft-plus.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/openvla-oft-plus.jsonl.gz",
+      "sha256": "9fc66a4f282ee1f7911213be82b4ea99eaa87cfe64e8a884a01b3b60280a8439",
+      "bytes": 59894,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/pi05-libero-gpt.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/pi05-libero-gpt.jsonl.gz",
+      "sha256": "31263a26b12e781b0bfa375f2670f0d31dce632c37c90d5525ca927c741eacb2",
+      "bytes": 65369,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/pi05-libero-mapped.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/pi05-libero-mapped.jsonl.gz",
+      "sha256": "607ba31dadfd5098af47cb011cf0ec76d1ba69b03bd5d99b8c282fe7f957bd08",
+      "bytes": 65253,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/pi05-libero-strip.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/pi05-libero-strip.jsonl.gz",
+      "sha256": "92906bad2eecd10bce4d930eb90a3ff6c872b5b655f4b24692ffdabdf907fb95",
+      "bytes": 65369,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/pi05-libero.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/pi05-libero.jsonl.gz",
+      "sha256": "cf232b0e12bf1c95dbc060ccf321a2a84f3063a84c818d60426d7c3c7d1c7318",
+      "bytes": 65412,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/recompute.py",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/recompute.py",
+      "sha256": "fb844717a51dc68b4b83d9985f572d61354ab371cb491ec81eff11a9747cf9aa",
+      "bytes": 4099,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/rewordings-in-mix.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/rewordings-in-mix.jsonl.gz",
+      "sha256": "83c072783709c640f07289b82f47ca94d56c6174e6f94b705097ba23e404b990",
+      "bytes": 67251,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-a-pass0.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-a-pass0.jsonl.gz",
+      "sha256": "eefb7f129ca711605bb0ed4d3aec41bb74161757f92cc32aa1d85c148445fd8c",
+      "bytes": 66980,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-a-pass1.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-a-pass1.jsonl.gz",
+      "sha256": "2c3bf25a4e49843c47331618f05cf12b081012f607cd90ca4fde914e4a018b9b",
+      "bytes": 66893,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-b-control.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-b-control.jsonl.gz",
+      "sha256": "321db0f790ec06ca4979b1b3fc524db585d4a47a0e9469b482d346b6748333ab",
+      "bytes": 67072,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-b-nolang.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-b-nolang.jsonl.gz",
+      "sha256": "dc8f8978b749ac7e171d265a016b355da1ccd7b395bb19057bb823e94efa824f",
+      "bytes": 67074,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-c-cleaned-lang.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-c-cleaned-lang.jsonl.gz",
+      "sha256": "4c2bb50c7456441774f01f2850764422e88c52b6c69cbabbb30c16737d989087",
+      "bytes": 67029,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/run-c-nolang.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/run-c-nolang.jsonl.gz",
+      "sha256": "5c7e41aa1ee921f2825d1a3fe225f055bde8236294ff6d19741e79db1538d1f9",
+      "bytes": 67000,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/teacher-failures.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/teacher-failures.jsonl.gz",
+      "sha256": "eec599e7038f7eb8aa738888c6e4fbc414c82eb453edf83cac08b0555bcad30b",
+      "bytes": 66959,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/teacher-rollouts.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/teacher-rollouts.jsonl.gz",
+      "sha256": "4886de46fed38caefb6a2061bbf68ae885529f7e6dbb99b7915e54e5d102cba3",
+      "bytes": 67055,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/views-all-weights.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/views-all-weights.jsonl.gz",
+      "sha256": "70b5d7f46b25248d045caca386df0cff3a2cbdf6c317089c2a6ea7a2c9bd8606",
+      "bytes": 67365,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/results/views-and-layouts.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/Alakazam-studios/targeted-data-libero-plus/554a0d06924f64f15551119e393373a9bc008771/results/views-and-layouts.jsonl.gz",
+      "sha256": "0cccc5ceb6c9eeed306b64b9674cb7b6f62302efd25119b87136b856a5db25b8",
+      "bytes": 67171,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    },
+    {
+      "path": "data/raw/libero_plus/provenance.json",
+      "url": null,
+      "sha256": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "bytes": 7320,
+      "bundled": true,
+      "source_revision": "554a0d06924f64f15551119e393373a9bc008771"
+    }
+  ]
+}

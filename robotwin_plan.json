@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-24",
+  "status": "external-benchmark replication; design frozen before RoboTwin predictor results",
+  "source_revision": "0abb5a03455073fa74047a1c4015b0f88cedc254",
+  "cohort": "all 25 entries marked cotrain; five single-task SFT entries excluded",
+  "conditions": ["clean", "randomized"],
+  "sensitivity": "repeat independently after excluding depth-input policies; no selection between cohorts",
+  "predictor_implementation": "unchanged src.sim_prediction.run_cohort and summarize; same models, seeds, inner CV and hyperparameter grid as RoboDojo",
+  "anchors": "5 and 10 scores in the same evaluation condition; five fixed random task orders; nested budgets",
+  "outer_validation": "3 family-grouped folds x 3 seeded partitions, with both compared policies held out together",
+  "inner_validation": "3 family-grouped folds on outer-training policies only; latent rank 1/2/4 and ridge 0.01/0.1/1 selected for family-macro MAE",
+  "primary_endpoints": ["family-macro score MAE", "task-macro pairwise error for observed success gaps >= 0.10; predicted ties cost 0.5"],
+  "candidate_references": "Scale for absolute scores and AnchorMean for ranking, selected from prior RoboDojo experiment; all seven methods reported",
+  "groups": [
+    {
+      "name": "pi_star_qwen_proxy",
+      "members": ["Pi_05", "Spatial_Forcing", "starVLA", "EventVLA"],
+      "reason": "inherit conservative connected grouping from earlier audit: pi0.5/Spatial Forcing share initialization; StarVLA PI creates a named-lineage bridge; StarVLA and EventVLA share published Qwen initialization",
+      "source": "data/processed/sim_prediction_family_edges.csv; data/raw/robodojo_app.js",
+      "confidence": "conservative grouping proxy, not a claim of identical RoboTwin checkpoints"
+    },
+    {
+      "name": "wan_related_proxy",
+      "members": ["X_WAM", "AHA_WAM", "FastWAM", "4D_WAM", "PrismWAM", "PrismWAM_Star"],
+      "reason": "X-WAM/AHA-WAM/FastWAM shared initialization in prior source; PrismWAM main uses Wan2.2-5B; PrismWAM variants share named method; 4D-WAM studies FastWAM and Lingbot-VA variants and is conservatively linked to FastWAM",
+      "sources": ["data/raw/robodojo_app.js", "https://arxiv.org/html/2610.26564v1", "https://arxiv.org/html/2608.08023v1"],
+      "confidence": "conservative grouping proxy; 4D-WAM clean-to-random variant uses Lingbot-VA, so this deliberately overgroups named method relations"
+    }
+  ],
+  "ungrouped_entries": "remaining entries use distinct provisional group IDs; undocumented shared ancestry may remain, so groups are not verified independent families",
+  "diagnostics": "zero/nonzero MAE; close-gap error; task-level pair coverage and failures; paired cluster-bootstrap deltas; anchor-set variation; depth exclusion",
+  "trial_policy": "board says 100 trials/task, but decimal percentages exist; preserve published means and nominal protocol, do not reconstruct episode counts or binomial intervals",
+  "limits": "known task catalog, same-condition anchors, published simulation means; no cross-condition forecasting, zero-shot new-task prediction, physical validation or training-data scaling claim",
+  "seed": 20261024
+}

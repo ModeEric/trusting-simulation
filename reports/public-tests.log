@@ -1,0 +1,29 @@
+test_constant_pearson_matches_author_convention (tests.test_metrics.MetricsTests.test_constant_pearson_matches_author_convention) ... ok
+test_every_published_task_matches_reference (tests.test_metrics.MetricsTests.test_every_published_task_matches_reference) ... ok
+test_exact_point_one_margin_is_included (tests.test_metrics.MetricsTests.test_exact_point_one_margin_is_included) ... ok
+test_metrics_randomized_ties (tests.test_metrics.MetricsTests.test_metrics_randomized_ties) ... ok
+test_mmrv_asymmetric_ties_and_argument_order (tests.test_metrics.MetricsTests.test_mmrv_asymmetric_ties_and_argument_order) ... ok
+test_fold_memberships_are_disjoint (tests.test_no_leakage.LeakageTests.test_fold_memberships_are_disjoint) ... ok
+test_no_embodiment_pooling (tests.test_no_leakage.LeakageTests.test_no_embodiment_pooling) ... ok
+test_positive_affine_calibration_preserves_rank (tests.test_no_leakage.LeakageTests.test_positive_affine_calibration_preserves_rank) ... ok
+test_reject_label_carrying_sim_table (tests.test_no_leakage.LeakageTests.test_reject_label_carrying_sim_table) ... ok
+test_test_task_mutation_cannot_change_its_predictions (tests.test_no_leakage.LeakageTests.test_test_task_mutation_cannot_change_its_predictions) ... ok
+test_base_task_holdout_and_nested_anchors (tests.test_libero_plus.LiberoPlusTests.test_base_task_holdout_and_nested_anchors) ... ok
+test_changed_source_metadata_is_rejected (tests.test_libero_plus.LiberoPlusTests.test_changed_source_metadata_is_rejected) ... ok
+test_complete_frozen_audit (tests.test_libero_plus.LiberoPlusTests.test_complete_frozen_audit) ... ok
+test_constant_training_matrix_is_stable (tests.test_libero_plus.LiberoPlusTests.test_constant_training_matrix_is_stable) ... ok
+test_output_files_have_all_design_rows (tests.test_libero_plus.LiberoPlusTests.test_output_files_have_all_design_rows) ... ok
+test_predictions_and_tuning_ignore_test_targets (tests.test_libero_plus.LiberoPlusTests.test_predictions_and_tuning_ignore_test_targets) ... ok
+test_source_scores_and_cohort (tests.test_libero_plus.LiberoPlusTests.test_source_scores_and_cohort) ... ok
+test_archive_restores_only_exact_bytes (tests.test_release_inputs.ReleaseInputTests.test_archive_restores_only_exact_bytes) ... ok
+test_changed_download_is_never_written (tests.test_release_inputs.ReleaseInputTests.test_changed_download_is_never_written) ... ok
+test_missing_bundled_input_requires_restoring_checkout (tests.test_release_inputs.ReleaseInputTests.test_missing_bundled_input_requires_restoring_checkout) ... ok
+test_modified_local_input_is_preserved (tests.test_release_inputs.ReleaseInputTests.test_modified_local_input_is_preserved) ... ok
+test_rejects_paths_outside_raw_directory (tests.test_release_inputs.ReleaseInputTests.test_rejects_paths_outside_raw_directory) ... ok
+test_verify_only_never_fetches_missing_input (tests.test_release_inputs.ReleaseInputTests.test_verify_only_never_fetches_missing_input) ... ok
+test_checksum_failure_replaces_stale_success (tests.test_reproduction_status.ReproductionStatusTests.test_checksum_failure_replaces_stale_success) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.468s
+
+OK

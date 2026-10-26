@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If this audit informs your work, cite this repository and the original benchmark sources."
+title: "Trusting Simulation: Auditing Robot Policy Selection with Public Evaluation Data"
+type: software
+authors:
+  - family-names: Modesitt
+    given-names: Eric
+version: 0.1.0
+date-released: 2026-10-26
+url: "https://github.com/ModeEric/trusting-simulation"
+repository-code: "https://github.com/ModeEric/trusting-simulation"
+license: MIT

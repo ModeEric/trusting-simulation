@@ -1,0 +1,64 @@
+[
+  {
+    "reason": "Fix pandas GroupBy.axis attribute collision before any predictor fits; no design change",
+    "before": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "c8394b87a2834a489ae7b95732b16e04183d0f5cb5b40ee83dd1af9775d788cc",
+      "src/libero_plus_experiment.py": "587a97dc97f7e8bdeeb62bea9c0455121b4de5500a46503b503f40732b1138af"
+    },
+    "after": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "c8394b87a2834a489ae7b95732b16e04183d0f5cb5b40ee83dd1af9775d788cc",
+      "src/libero_plus_experiment.py": "712321431bc70f82a490cf91ef337d4b9353dec926f19a1724540ad70af15096"
+    }
+  },
+  {
+    "reason": "Before results inspection, strengthen source provenance and metadata checksum verification; no prediction, split, metric, or tuning changes",
+    "before": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "c8394b87a2834a489ae7b95732b16e04183d0f5cb5b40ee83dd1af9775d788cc",
+      "src/libero_plus_experiment.py": "712321431bc70f82a490cf91ef337d4b9353dec926f19a1724540ad70af15096"
+    },
+    "after": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "08076212efbf53508a02b6360e1c317c7dbfba6a4910c799c08d49224dceefc1",
+      "src/libero_plus_experiment.py": "95f46c1ba0146ca1eba9be4d9a6f5f97f12721859360def931e8257dcecc6d37",
+      "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+    }
+  },
+  {
+    "reason": "Make optional pinned download idempotent: preserve initial access provenance rather than hash or rewrite itself; no prediction changes",
+    "before": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "08076212efbf53508a02b6360e1c317c7dbfba6a4910c799c08d49224dceefc1",
+      "src/libero_plus_experiment.py": "95f46c1ba0146ca1eba9be4d9a6f5f97f12721859360def931e8257dcecc6d37",
+      "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+    },
+    "after": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "d9de9267f9ce009cf39e03ff63769125ad90eff3d5411455fd56b5a72d8f6094",
+      "src/libero_plus_experiment.py": "95f46c1ba0146ca1eba9be4d9a6f5f97f12721859360def931e8257dcecc6d37",
+      "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+    }
+  },
+  {
+    "reason": "Repair a truncated compressed metrics export using saved split and tuning choices; switch to atomic verified gzip writes and add output-completeness regression test. No model, metric, split, or hyperparameter changes. No error summaries inspected before repair.",
+    "before": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "d9de9267f9ce009cf39e03ff63769125ad90eff3d5411455fd56b5a72d8f6094",
+      "src/libero_plus_experiment.py": "95f46c1ba0146ca1eba9be4d9a6f5f97f12721859360def931e8257dcecc6d37",
+      "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+    },
+    "after": {
+      "libero_plus_plan.json": "07ee7aef99820b29c7202e032128b0f3e8df963e9d90fdff67e90349afff6293",
+      "src/ingest_libero_plus.py": "d9de9267f9ce009cf39e03ff63769125ad90eff3d5411455fd56b5a72d8f6094",
+      "src/libero_plus_experiment.py": "bd935e3b7a0b0896a990262fd476cdc2eefbe6af95647ccd63edd4aa6da249d6",
+      "data/raw/libero_plus/provenance.json": "8597e839fd945919d87184af09bd0123dc9dd2c10c6498ac0bec92188d3706c8",
+      "data/raw/libero_plus/results/MANIFEST.json": "e7f7efae3f0a13c2a4400e9a14a072989689f98940711f0e70fc6f956e26987c"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trusting-simulation"
+version = "0.1.0"
+description = "Offline audit of simulation-based robot-policy selection"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "pandas>=2.2", "scipy>=1.14", "matplotlib>=3.9", "reportlab>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+paper = ["pypdf>=6"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

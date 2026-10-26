@@ -1,0 +1,56 @@
+{
+  "archive_python": "3.12.14",
+  "release_python": "3.11.15",
+  "top_level_package_versions_match": true,
+  "comparisons": [
+    {
+      "file": "simpler_summary.csv",
+      "same_shape": true,
+      "columns_unchanged": true,
+      "maximum_absolute_numeric_difference": 3.0531133177191805e-16,
+      "all_numeric_values_match_within_1e_9": true
+    },
+    {
+      "file": "robotwin_summary.csv",
+      "same_shape": true,
+      "columns_unchanged": true,
+      "maximum_absolute_numeric_difference": 1.1102230246251565e-16,
+      "all_numeric_values_match_within_1e_9": true
+    },
+    {
+      "file": "robotwin_learning_curve_summary.csv",
+      "same_shape": true,
+      "columns_unchanged": true,
+      "maximum_absolute_numeric_difference": 0.0006424161034133957,
+      "all_numeric_values_match_within_1e_9": false
+    },
+    {
+      "file": "robotwin_models_summary.csv",
+      "same_shape": true,
+      "columns_unchanged": true,
+      "maximum_absolute_numeric_difference": 1.1102230246251565e-16,
+      "all_numeric_values_match_within_1e_9": true
+    },
+    {
+      "file": "libero_plus_summary.csv",
+      "same_shape": true,
+      "columns_unchanged": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "all_numeric_values_match_within_1e_9": true
+    }
+  ],
+  "robotwin_learning_curve": {
+    "split_membership_changes": 0,
+    "tuning_choice_changes": 45,
+    "total_fits": 2250,
+    "maximum_point_estimate_difference": 0.0006275905204292109,
+    "maximum_point_estimate_difference_percentage_points": 0.06275905204292109,
+    "affected_training_fractions": [
+      0.2,
+      0.4,
+      0.6
+    ],
+    "full_coverage_primary_unchanged": true
+  },
+  "interpretation": "Small differences are confined to reduced-coverage latent learning-curve fits. The original SVD predictor retains rank-deficient directions; numerical sensitivity is a plausible contributor, not an isolated causal finding. Released reports use the verified clean-run outputs. Primary conclusions are unchanged."
+}

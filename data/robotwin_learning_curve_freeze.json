@@ -1,0 +1,9 @@
+{
+  "robotwin_learning_curve_plan.json": "cbb9ba9adfb4666d5a8bc001f44f2260777a480d196b88c18b5b7779b4d91761",
+  "src/robotwin_learning_curve.py": "3ded5a80117d9f8c4ca2b477819ca33cbb07534d6d5c5b50b3399f9fd06872ce",
+  "src/sim_prediction.py": "467a221ee675a422bf453ce36ced831075dca0e7315b99bc671746a7b09f2147",
+  "data/raw/robotwin_leaderboard.json": "6214f507bdafbe56b73c76a9d91439b9ec025fe5ff53757bd981307b1ab3c805",
+  "data/processed/robotwin_policy_metadata.csv": "189754ace583b5bc52152ba19fbc0a1e9cbaec4a4545fa4f818482c9cc8d169e",
+  "data/processed/robotwin_matrix_clean.csv": "d58e5a7cd342b646e7fdede154d698ac0f30c26f82c50a516bbae08bb9c1527c",
+  "data/processed/robotwin_matrix_randomized.csv": "eb647af3d04815958513062fdb76e77610474e2d1b0ecc27f8b8b7567bfc5a8e"
+}

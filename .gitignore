@@ -1,0 +1,17 @@
+.local/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+/data/raw/*
+!/data/raw/README.md
+!/data/raw/simpler_metrics.py
+!/data/raw/simpler_calc_metrics.py
+!/data/raw/simpler_LICENSE
+!/data/raw/libero_plus/
+/data/processed/
+/results/
+/output/
+/dist/
+/data/manifest.json
+*.egg-info/

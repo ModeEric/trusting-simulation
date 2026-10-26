@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "scope": [
+    "SIMPLER",
+    "LIBERO-Plus"
+  ],
+  "stages": [
+    {
+      "command": "python -m src.ingest_simpler",
+      "returncode": 0,
+      "seconds": 0.234
+    },
+    {
+      "command": "python -m src.evaluate --dataset simpler --cv leave-one-task-out",
+      "returncode": 0,
+      "seconds": 4.332
+    },
+    {
+      "command": "python -m src.ingest_libero_plus",
+      "returncode": 0,
+      "seconds": 0.872
+    },
+    {
+      "command": "python -m src.libero_plus_experiment",
+      "returncode": 0,
+      "seconds": 86.759
+    },
+    {
+      "command": "python -m src.libero_plus_report",
+      "returncode": 0,
+      "seconds": 3.485
+    },
+    {
+      "command": "python -m unittest -v tests.test_metrics tests.test_no_leakage tests.test_libero_plus tests.test_release_inputs tests.test_reproduction_status",
+      "returncode": 0,
+      "seconds": 1.195
+    }
+  ],
+  "elapsed_seconds": 96.89,
+  "network_downloads_in_reproduction": 0,
+  "new_robot_trials": 0,
+  "new_simulation_rollouts": 0,
+  "policy_inference_calls": 0,
+  "paid_api_calls": 0
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-24",
+  "status": "exploratory three-stage follow-up; all designs frozen before new model results",
+  "sequence": ["1: expanded linear factors", "2: bounded logit-space factors", "3: pairwise ranking-trained models"],
+  "cohorts": ["clean", "randomized"],
+  "data": "same pinned 25 cotrain policies, 50 tasks, 17 ancestry proxies",
+  "outer": "original 3 group folds x 3 partitions x 5 anchor orders; never compare policies across held-out folds",
+  "training_fractions": [0.2, 0.6, 1.0],
+  "subset_draws": 3,
+  "subsets": "first three nested group orders from the preceding learning curve; retain all configurations in selected groups",
+  "anchor_budgets": [5, 10, 20],
+  "primary_endpoint": "full training pool, 10 anchors, all 40 nonanchor tasks; score MAE and material-gap task-macro ranking error",
+  "controlled_scaling_endpoint": "the last 30 tasks of each seeded task order, identical at all anchor budgets and training fractions",
+  "stage1": {
+    "controls": ["AnchorMean", "Additive", "Scale", "OriginalLatent", "LinearRidge"],
+    "original_grid": "ranks 1/2/4, ridge 1/0.1/0.01, original MAE selection",
+    "ridge_control_grid": "ranks 1/2/4, ridge 10/1/0.1/0.01",
+    "candidate": "LinearWide: rank caps 1/2/4/8/12, ridge 10/1/0.1/0.01",
+    "capacity": "effective rank capped by centered training-matrix numerical rank; requested and effective ranks recorded",
+    "selection": "inner grouped CV family-macro MAE on all nonanchor tasks; ascending rank then descending ridge tie break"
+  },
+  "stage2": {
+    "candidate": "LogitLatent",
+    "model": "clip means to [0.01,0.99], transform to logits, learn task basis by centered SVD, ridge-infer policy coordinates from logit anchors, apply sigmoid",
+    "grid": "rank caps 1/2/4/8/12, ridge 10/1/0.1/0.01",
+    "selection": "inner grouped CV family-macro probability-space MAE",
+    "limit": "a bounded nonlinear prediction rule with logit-space squared-error factor fitting; not joint optimization of probability-space likelihood"
+  },
+  "stage3": {
+    "candidates": ["RankGlobal", "RankTask"],
+    "utility": "mean(anchor scores) plus a learned linear correction from centered anchors; shared correction for RankGlobal, separate per task for RankTask",
+    "loss": "pairwise logistic loss for training policy pairs from different groups with observed success gaps >=0.10; fixed temperature 0.10; L2 shrink correction toward zero",
+    "pair_weights": "inverse product of policy counts in the two groups, then normalize within each task",
+    "ridge_grid": ["infinity (anchor-only baseline)", 100.0, 10.0, 1.0, 0.1],
+    "selection": "inner jointly held-out cross-family pairs only; pool disjoint folds then task-macro ranking error; ties prefer more shrinkage",
+    "small_sample_rule": "if inner folds contain no eligible cross-family comparisons, select the anchor-only baseline and flag selection as unavailable",
+    "output": "uncalibrated utilities used only for ranking; do not present utility MAE as success-rate prediction error"
+  },
+  "uncertainty": "paired 2000-draw cluster bootstrap over group proxies for MAE and tasks for ranking; descriptive conditional intervals",
+  "diagnostics": "selected requested/effective ranks, shrinkage choices, unavailable ranking-selection folds, optimizer convergence, primary close-gap ranking, paired deltas versus AnchorMean/OriginalLatent/Additive",
+  "interpretation": "all three predeclared methods and null results retained; no choosing a test-set winner as an unbiased new discovery; no new robot-policy training, inference, rollouts, paid APIs, physical validation, or unseen-task claims"
+}
